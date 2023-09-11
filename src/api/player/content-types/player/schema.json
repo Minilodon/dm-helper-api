@@ -1,0 +1,124 @@
+{
+  "kind": "collectionType",
+  "collectionName": "players",
+  "info": {
+    "singularName": "player",
+    "pluralName": "players",
+    "displayName": "Player",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "name",
+      "required": true
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "first_circle_total": {
+      "type": "integer",
+      "required": true,
+      "min": 0
+    },
+    "first_circle_available": {
+      "type": "integer",
+      "required": true,
+      "min": 0
+    },
+    "second_circle_total": {
+      "type": "integer",
+      "required": true,
+      "min": 0
+    },
+    "second_circle_available": {
+      "type": "integer",
+      "required": true,
+      "min": 0
+    },
+    "third_circle_total": {
+      "type": "integer",
+      "required": true,
+      "min": 0
+    },
+    "third_circle_available": {
+      "type": "integer",
+      "required": true,
+      "min": 0
+    },
+    "fourth_circle_total": {
+      "type": "integer",
+      "required": true,
+      "min": 0
+    },
+    "fourth_circle_available": {
+      "type": "integer",
+      "required": true,
+      "min": 0
+    },
+    "fifth_circle_total": {
+      "type": "integer",
+      "required": true,
+      "min": 0
+    },
+    "fifth_circle_available": {
+      "type": "integer",
+      "required": true,
+      "min": 0
+    },
+    "sixth_circle_total": {
+      "type": "integer",
+      "required": true,
+      "min": 0
+    },
+    "sixth_circle_available": {
+      "type": "integer",
+      "required": true,
+      "min": 0
+    },
+    "seventh_circle_total": {
+      "type": "integer",
+      "required": true,
+      "min": 0
+    },
+    "seventh_circle_available": {
+      "type": "integer",
+      "required": true,
+      "min": 0
+    },
+    "eighth_circle_total": {
+      "type": "integer",
+      "required": true,
+      "min": 0
+    },
+    "eighth_circle_available": {
+      "type": "integer",
+      "required": true,
+      "min": 0
+    },
+    "nineth_circle_total": {
+      "type": "integer",
+      "required": true,
+      "min": 0
+    },
+    "nineth_circle_available": {
+      "type": "integer",
+      "required": true,
+      "min": 0
+    }
+  }
+}
