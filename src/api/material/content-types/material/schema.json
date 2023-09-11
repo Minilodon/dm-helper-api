@@ -1,0 +1,35 @@
+{
+  "kind": "collectionType",
+  "collectionName": "materials",
+  "info": {
+    "singularName": "material",
+    "pluralName": "materials",
+    "displayName": "Material"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "name",
+      "required": true
+    },
+    "image": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "description": {
+      "type": "text"
+    }
+  }
+}
